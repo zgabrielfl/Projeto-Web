@@ -1,6 +1,6 @@
 #hero {
-    background: var(--light-gray);
-    border-top: 0.125rem solid #e4e4e4;
+    background: #af1414; /* Um cinza mais forte e destacado */
+    border-top: 0.125rem solid #bb0c0c; /* Bordas mais escuras */
     height: 90vh;
     display: flex;
 }
@@ -11,9 +11,10 @@
     padding-left: 30%;
 }
 #hero p {
-    color: var(--second-text-color);
-  }
-  #hero .content {
+    color: #d41414; /* Texto em um cinza bem escuro para contraste */
+}
+
+#hero .content {
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -21,48 +22,66 @@
     text-align: center;
     gap: 1.75rem;
 }
+
 #hero .content > div {
     width: fit-content;
     align-self: center;
     margin-bottom: 20%;
 }
-@media (width >= 1280px) {
+
+@media (min-width: 1280px) {
     #hero {
-        background: var(--bg-color);
+        background: #ff1c1c; /* Um cinza mais forte para telas grandes */
         border-top: none;
         height: 90vh;
         display: flex;
         overflow: hidden;
-        > span {
-            position: absolute;
-            top: 0;
-        }
-        
-        > img {
-            top: 0;
-            height: 82%;
-            padding-left: 55%;
-        }
-        }
+    }
+    
+    #hero > span {
+        position: absolute;
+        top: 0;
+    }
+    
+    #hero > img {
+        top: 0;
+        height: 82%;
+        padding-left: 55%;
+    }
     
     .content p {
         width: 80%;
         align-self: center;
     }
+    
     .content {
         gap: 2.5rem;
     }
     
-    .content > div :first-child {
+    .content > div:first-child {
         width: 10.625rem;
     }
+    
     .content p {
         width: 80%;
         align-self: center;
     }
     
     .content p:first-of-type {
-        color: var(--primary-color);
-        font-weight: var(--fw-bold);
+        color: #942f11; /* Um laranja forte para chamar atenção */
+        font-weight: bold;
     }
-}    
+}
+
+#hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* altura total da viewport */
+  background-image: url('../assets/castel.png'); /* Caminho da imagem */
+  background-size: cover; /* Ajusta a imagem para cobrir toda a área da seção */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  display: flex;
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo */
+}

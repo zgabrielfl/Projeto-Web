@@ -9,7 +9,6 @@ import { useEffect, useState } from "react";
 import HeroRectangleOne from "../assets/imagens/rectangle_One.png";
 import HeroRectangleTwo from "../assets/imagens/rectangle_Two.png";
 import "../styles/hero.css";
-import Card from "../components/Card";
 
 export default function Home() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -97,9 +96,7 @@ export default function Home() {
             </header>
             <section id="hero">
                 <span className="desktop-only">
-                    <img src={HeroRectangleTwo} alt="Retangulo um tela inicial" />
                 </span>
-                <img src={HeroRectangleOne} alt="Retangulo dois tela inicial" />
                 <div className="container content">
                     <p className="desktop-only">Bem vindo</p>
                     <h1>
