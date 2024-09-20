@@ -1,50 +1,29 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto: Site de RPG de Mesa
+Descrição
+Este é um site voltado para jogadores de RPG de mesa, oferecendo uma plataforma completa para quem quer aprender e jogar com seus amigos. O site permite que os usuários criem suas próprias aventuras ou joguem utilizando sistemas de RPG já existentes, com uma interface simples e interativa.
 
-Currently, two official plugins are available:
+Funcionalidades Principais:
+Criação de Aventuras Personalizadas: Permite que mestres criem suas próprias histórias, campanhas e personagens.
+Jogos Baseados em Sistemas Populares: Oferece suporte para sistemas de RPG tradicionais como D&D, Pathfinder, e outros.
+Multijogador Online: Jogadores podem se conectar e jogar juntos através da plataforma.
+Fichas de Personagens: Gestão completa de fichas de personagens, inventários, habilidades e status.
+Sistema de Chat: Comunicação em tempo real para facilitar a interação entre os jogadores durante as partidas.
+Tecnologias Utilizadas:
+React: Frontend dinâmico e interativo.
+CSS: Estilização responsiva e adaptável para diferentes dispositivos.
+Netlify: Hospedagem da aplicação de forma rápida e eficiente.
+Como Acessar
+Você pode acessar o site diretamente através do Netlify:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Acesse o Site
+Ou explorar o código-fonte e contribuir com o projeto através do GitHub:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Repositório no GitHub
+Como Contribuir
+Faça um fork do repositório.
+Crie uma nova branch (git checkout -b feature/MinhaFeature).
+Faça commit das suas alterações (git commit -m 'Minha nova feature').
+Envie para o repositório remoto (git push origin feature/MinhaFeature).
+Crie uma Pull Request.
